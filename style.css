@@ -54,6 +54,10 @@ input::placeholder{
     transition-delay: 0.1s;
 }
 
+.item.o{
+    display: none;
+}
+
 .checkmark{
     align-items: center;
     justify-content: center;
