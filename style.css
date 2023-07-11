@@ -1,3 +1,94 @@
-body {
+*, *::before, *::after {
     font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --cell-size:100px;
+    --mark-size: calc((var(--cell-size)* .9));
+}
+
+.title h1{
+    text-align: center;
+    font-size: 70px;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.add{
+    display: block;
+    margin: 20px auto;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+}
+
+input {
+    border: none;
+    background: #f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    font-size: 17px;
+    width: 500px;
+    outline: none;
+}
+
+input:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder{
+    color: #222;
+    transition: color 0.3s ease;
+}
+
+.item input:focus{
+    border: 2px solid #222;
+    transition-delay: 0.1s;
+}
+
+.checkmark{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    border-color: white;
+    border-radius: 2px;
+}
+
+.checkmark img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: -3.2px;
+}
+
+.checkmark:hover{
+    border: 2.5px solid rgb(0, 193, 0);
+    transition-delay: 0.1s;
+}
+
+.add{
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.add:hover{
+    background-color: white;
+    color: black;
+    border: 2px dotted black;
 }
