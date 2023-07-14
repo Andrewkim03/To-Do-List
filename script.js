@@ -39,6 +39,10 @@ function clear(index){
         if((!itemElements[i].classList.contains('o')) && textElements[i].value === ''){
             itemElements[i].classList.add('o');
         }
+        else if(!itemElements[i].classList.contains('o')){
+            itemElements[i].classList.add('o');
+            return;
+        }
         i--;
     }
 }
