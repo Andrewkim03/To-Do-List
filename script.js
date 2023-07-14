@@ -38,7 +38,6 @@ function clear(index){
     while(i > index && i > 4){
         if((!itemElements[i].classList.contains('o')) && textElements[i].value === ''){
             itemElements[i].classList.add('o');
-            return;
         }
         i--;
     }
